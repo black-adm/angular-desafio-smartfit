@@ -1,5 +1,5 @@
 <div class="form-container">
-    <form>
+    <form [formGroup]="formGroup">
         <div class="form-icon">
             <img src="/assets/images/clock.png" alt="Clock icon">
             Horário
@@ -11,41 +11,44 @@
         <hr>
 
         <div class="form-radios">
-            <input type="radio" name="morning" value="morning">
+            <input type="radio" name="period" value="morning" formControlName="period">
             <label for="morning">Manhã</label>
             <span>06:00 ás 12:00</span>
         </div>
         <hr>
 
         <div class="form-radios">
-            <input type="radio" name="afternoon" value="afternoon">
+            <input type="radio" name="period" value="afternoon" formControlName="period">
             <label for="afternoon">Tarde</label>
             <span>12:01 ás 18:00</span>
         </div>
         <hr>
 
         <div class="form-radios">
-            <input type="radio" name="night" value="night">
+            <input type="radio" name="period" value="night" formControlName="period">
             <label for="night">Noite</label>
             <span>18:01 ás 23:00</span>
         </div>
         <hr>
 
         <div class="form-checkbox">
-            <input type="checkbox" name="closed-units">
-            <label for="closed-units">Exibir unidades fechadas</label>
+            <span>
+                <input type="checkbox" name="showClosed" formControlName="showClosed">
+                <label for="showClosed">Exibir unidades fechadas</label>
+            </span>
 
             <span>
-                Resultados encontrados: <strong>0</strong>
+                Resultados encontrados:
+                <strong>{{ results.length }}</strong>
             </span>
         </div>
 
         <div class="form-buttons">
-            <button>
+            <button (click)="onSubmit()">
                 Encontrar unidade
             </button>
 
-            <button id="clean-button">
+            <button id="clean-button" (click)="onClean()">
                 Limpar
             </button>
         </div>
