@@ -1,0 +1,159 @@
+.form-container {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px;
+    border: 2px solid var(--border-grey);
+    border-bottom: 4px solid var(--border-grey);
+    border-radius: 6px;
+}
+
+.form-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light-grey);
+}
+
+.form-icon img {
+    width: 28px;
+}
+
+h4 {
+    margin-top: 32px;
+    padding-left: 8px;
+    padding-bottom: 12px;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--light-grey);
+}
+
+hr {
+    width: 100%;
+    border: solid 1px #F4F3EE;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.form-radios {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: var(--light-grey);
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 20px;
+    height: 24px;
+}
+
+.form-radios span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: var(--light-grey);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    width: 100%;
+    margin-top: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    color: var(--light-grey);
+}
+
+.form-checkbox label {
+    width: 100%;
+}
+
+input[type=checkbox] {
+    border: 0px;
+    width: 20px;
+    height: 28px;
+}
+
+span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 6px;
+    margin: 0 auto;
+    color: var(--light-grey);
+}
+
+strong {
+    color: black;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.form-buttons {
+    margin-top: 32px;
+    width: 100%;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.form-buttons button {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+
+    width: 32%;
+    padding: 12px;
+
+    border: 0;
+    border-radius: 3px;
+    background: var(--yellow);
+    cursor: pointer;
+}
+
+.form-buttons button:hover {
+    background: yellow;
+}
+
+#clean-button {
+    background: white;
+    border: 2px solid var(--border-grey);
+}
+
+#clean-button:hover {
+    border: 0;
+    background: #F8F9FA;
+}

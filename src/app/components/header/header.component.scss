@@ -10,7 +10,7 @@ header {
 
 .logo-container {
     background: black;
-    padding: 44px;
+    padding: 40px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ header {
 }
 
 .logo-container img {
-    height: 80px;
+    height: 70px;
 }
 
 .text-container {
@@ -28,8 +28,8 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .title {
