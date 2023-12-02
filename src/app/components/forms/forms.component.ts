@@ -26,9 +26,9 @@ export class FormsComponent implements OnInit {
       showClosed: true
     });
 
-    this.unitService.getAll().subscribe(response => {
-      this.results = response.locations
-      this.filtredResults = response.locations;
+    this.unitService.getAll().subscribe(data => {
+      this.results = data.locations
+      this.filtredResults = data.locations;
     });
   }
 

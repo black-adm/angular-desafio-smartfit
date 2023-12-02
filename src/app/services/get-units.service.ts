@@ -7,11 +7,11 @@ import { UnitsResponse } from '../types/units.interface';
   providedIn: 'root'
 })
 export class GetUnitsService {
-  readonly api = "https://test-frontend-developer.s3.amazonaws.com/data/locations.json"
+  readonly apiUrl = "https://test-frontend-developer.s3.amazonaws.com/data/locations.json"
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   getAll(): Observable<UnitsResponse> {
-    return this.httpClient.get<UnitsResponse>(this.api);
+    return this.httpClient.get<UnitsResponse>(this.apiUrl)
   }
 }
